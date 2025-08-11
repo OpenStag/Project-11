@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+  background: rgb(241, 217, 162);
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  padding: 25px;
+  padding-top: 10px;
+  
+}
+
+.custom-shape-divider-top-1754903500 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1754903500 svg {
+    position: relative;
+    display: block;
+    width: calc(282% + 1.3px);
+    height: 300px;
+}
+
+.custom-shape-divider-top-1754903500 .shape-fill {
+    fill: #6CC164;
+}
+
+.navbar{
+    width: 1500px;
+    height: 70px;
+    margin: auto;
+    position: relative;
+   
+}
+
+.icon{
+    width:200px;
+    height: 70px;
+    float: left;
+}
+
+.logo{
+    width: 162px;
+    height: 73px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;   
+    font-weight: bold;
+    padding-left: 30px;
+    float: left;
+    padding-top: 5px;
+    position: relative;
+    align-items: center;
+    
+}
+
+.home{
+    width:101px;
+    height: 39px;
+    color:rgb(230, 190, 97);
+    font-size: 30px;
+    top:16px;
+    left:40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    
+}
+
+.makers{
+   width:122px;
+    height: 39px;
+    padding-left: 10px;
+    position: relative;
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+    left:40px; 
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+
+.nav-links{
+    width: 550px;
+    height: 70px;
+    float: left;
+    position: relative;
+    margin-left: 750px;
+    
+    
+}
+
+.navbar-links a {
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.active-nav-link {
+    border-bottom: 3px solid #F08C42; 
+    padding-bottom: 4px; 
+    width: 100px; 
+    height: 0px; 
+    opacity: 1;
+    top: 94px; 
+    left: 1298px;
+    border-width: 4px; 
+    
+    
+}
+
+ul{
+    float: center;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    padding-top: 15px;
+    
+}
+
+ul li{
+    list-style: none;
+    margin-left: 60px;
+    margin-top: 10px;
+    font-size: 20px;
+  
+}
+
+ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+body, html {
+    overflow-x: hidden; /* hides horizontal scroll */
+    overflow-y: hidden; /* hides vertical scroll */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
