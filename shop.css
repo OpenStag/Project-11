@@ -253,7 +253,7 @@ ul li{
 
 .product-card {
     background-color: rgb(168, 204, 128);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
     width: 417px;
     height: 460px;
     top: 240px;
