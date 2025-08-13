@@ -12,7 +12,7 @@
   background-position: center;
   background-size: cover;
   position:relative; 
-  overflow-y: auto;  
+  
 }
 
 /*Navigation Bar*/
@@ -44,6 +44,29 @@ nav{
     fill: #6CC164;
 }
 
+.custom-shape-divider-bottom-1755004163 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1755004163 svg {
+    position: relative;
+    display: block;
+    width: calc(282% + 1.3px);
+    height: 300px;
+}
+
+.custom-shape-divider-bottom-1755004163 .shape-fill {
+    fill: #6CC164;
+}
+
+
+
 .navbar{
     width: 1500px;
     height: 70px;
@@ -64,7 +87,7 @@ nav{
     font-family: 'Montserrat', sans-serif;   
     font-weight: bold;
     float: left;
-    top:-23px;
+    top:-26px;
     left: -40px;
     position: relative;
     align-items: center;
@@ -119,8 +142,7 @@ nav{
 ul{
     float: center;
     display: flex;
-    justify-content: center; 
-    
+    justify-content: center;     
     padding-top: 0px;    
 }
 
@@ -162,8 +184,8 @@ ul li{
   background-color: rgba(230, 190, 97, 0.68);
   border-radius: 50%;
   position: absolute;
-  left: -90px;
-  top: 230px;
+  left: -130px;
+  top: 260px;
   z-index: 0;
   margin-top: -100px;
 }
@@ -174,9 +196,9 @@ ul li{
   background-color: rgba(230, 190, 97, 0.68);
   border-radius: 50%;
   position: absolute;
-  left: 1200px;
+  left: 1229px;
   right: 50px;
-  top: 1025px;
+  top: 1076px;
   z-index: 0;
   margin-top: -100px;
 }
@@ -187,8 +209,8 @@ ul li{
   background-color: rgba(230, 190, 97, 0.68);
   border-radius: 50%;
   position: absolute;
-  left: -90px;
-  top: 1260px;
+  left: -130px;
+  top: 1300px;
   z-index: 0;
   margin-top: -100px;
 }
@@ -201,7 +223,7 @@ ul li{
   position: absolute;
   left: 1200px;
   right: 50px;
-  top: 2300px;
+  top: 2376px;
   z-index: 0;
   margin-top: -100px;
 }
@@ -223,7 +245,8 @@ ul li{
 .product-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    margin-top: 50px;
     flex-wrap: wrap;
 }
 
@@ -248,8 +271,10 @@ ul li{
   width: 1287.04px;
   top: 755px;
   left: 46px;
+  margin-top:10px;
   border-width: 5px;
   opacity: 1;
+  
 }
 
 .horizontal-line {
@@ -277,22 +302,30 @@ ul li{
 .product-card h3 {
     font-size: 24px;
     margin: 15px 0 10px;
-    color: rgb(0, 0, 0);
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+
 }
 
 .price {
     font-size: 24px;
-    color: #F08C42;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
     margin-bottom: 15px;
 }
 
 .purchase-btn {
-    background-color: #6CC164;
-    color: white;
+    background-color: rgb(230, 190, 97);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     border: none;
+    top:2391px;
+    width:157px;
+    height: 48px;
     padding: 10px 20px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 41px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -405,34 +438,180 @@ body, html {
     overflow-y: auto; /* hides vertical scroll */
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .nav-links ul li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Footer */
+.site-footer {
+  
+  color: black;
+  padding: 2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+    margin: 0;
+    font-size: 1.5rem;
+    width: 162px;
+    height: 73px;
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;   
+    font-weight: bold;
+    float: right;
+    top:125px;
+    left: 1100px;
+    position: relative;
+    align-items: center;
+    align-items: left;
+    
+}
+
+.footer-links a {
+  display: block;
+  color:black;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-contact {
+  font-family: 'Montserrat', sans-serif;
+  color:#ffff;
+  left: -850px;
+  position: relative;
+  top:90px;
+  width: 350px;
+  height: 121px;
+  opacity: 1;
+  
+}
+.contact-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-underline{
+  height: 4px;
+  background-color: #ffff;
+  margin: 4px;
+  margin-left: 95px;
+  margin-bottom: 10px;
+  width: 240.01px;
+  top: 2709px;
+  left: 75px;
+  border-width: 3px;
+  opacity: 1;
+ }
+
+.contact-info-phone {
+  font-weight: bold;
+  height: auto;
+  top: 2720px;
+ margin-left:  5px;
+  margin-bottom: 5px;
+  
+}
+.contact-info-facebook{
+  font-weight: bold;
+  height: auto;
+  top: 2720px;
+  margin-left: -12px;
+  margin-bottom: 9px;
+}
+.contact-info-mail{
+    width: full;
+font-weight: bold;
+  height: auto;
+  top: 2720px;
+  margin-left: 75px;
+  
+}
+
+.contact-info-facebook i{
+    margin-right: 15px;
+    
+}
+.contact-info-phone i{
+    margin-right: 15px;
+    
+}
+.contact-info-mail i{
+    margin-right: 15px;
+    
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 
+.home-footer{
+    width:101px;
+    height: 39px;
+    color:rgb(230, 190, 97);
+    top:16px;
+    left:40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
+.makers-footer{
+   width:122px;
+    height: 39px;
+    padding-left: 10px;
+    position: relative;
+    color:rgb(255, 255, 255);
+    top:-7px;
+    left:40px; 
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
 
 
