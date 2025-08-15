@@ -31,19 +31,37 @@
         <span class="makers"><br>Makers</span>
       </div>
 
-      <!-- Navigation Links -->
-      <div class="nav-links">
-        <ul>
+        <ul class = "side-bar">
+          <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-rectangle-xmark fa-2x"></i></a></li> 
           <li><a href="#">Services</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Shop</a></li>
         </ul>
-        <div class = "menu-icon">
-        <i class="fa-solid fa-bars"></i>
+
+      <!-- Navigation Links -->
+      <div class="nav-links">
+        <ul>
+          <li class="hideOnMobile"><a href="#">Services</a></li>
+          <li class="hideOnMobile"><a href="#">Portfolio</a></li>
+          <li class="hideOnMobile"><a href="#">Contact</a></li>
+          <li class="hideOnMobile"><a href="#">Shop</a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars fa-2x"></i></a></li>
+        </ul>
         </div>
       </div>
     </nav>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.side-bar');
+             sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector('.side-bar');
+             sidebar.style.display = 'none'
+        }
+    </script>
 
     <!-- Background Circles -->
     <div class="circle-wrapper">
