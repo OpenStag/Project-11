@@ -1,0 +1,325 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.custom-navbar {
+    background-color: #6CC164;
+    padding: 1.5rem;
+    border-bottom-left-radius: 60% 20%;
+    border-bottom-right-radius: 60% 20%;
+}
+
+.navbar-brand {
+    color: #E6BE61;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.nav-span-brand {
+    color: white;
+    margin-left: 28px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* Top Section Background */
+.top-section {
+    position: relative;
+    background-image: url('/images-home/top-bg.jpg'); /* adjust path */
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Header Text */
+.header-text {
+    width: 100%;
+    max-width: 1415px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    color: white;
+    text-align: center;
+    text-shadow: 0px 7px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* SVG Curve */
+.curve-container {
+    width: 100%;
+    margin-top: 50px;
+}
+.curve-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* About Us Section */
+.about-us {
+    margin-top: -100px; /* overlap curve */
+    padding: 50px 20px;
+}
+.about-title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #010101;
+    text-shadow: 0px 7px 3px rgba(0, 0, 0, 0.25);
+}
+.about-underline {
+    width: 759px;
+    max-width: 100%;
+    height: 5px;
+    background-color: #000000;
+    margin: 10px auto 30px auto;
+}
+.about-text {
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    text-align: center;
+}
+
+.middle-section {
+  position: relative;
+  background: #E6BE6196; /* gold-ish transparent bg */
+  width: 1444px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+/* Two parallel images */
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.side-image {
+  width: 779px;
+  height: 526px;
+  object-fit: cover;
+}
+
+/* Headings */
+.section-heading {
+  text-align: center;
+  margin: 60px 0 20px;
+}
+
+.section-heading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.underline {
+  width: 100px;
+  height: 4px;
+  background: black;
+  margin: 10px auto 0;
+}
+
+/* Stack container */
+.stack-container {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 40px auto;
+  overflow: hidden;
+}
+
+/* Background image */
+.stack-bg {
+  background-image: url('/images-home/transforming-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+/* Green transparent curve */
+.stack-curve {
+  background: #6CC16496;
+  position: absolute;
+  inset: 0;
+  clip-path: ellipse(75% 100% at 50% 100%);
+  z-index: 2;
+  transform: scaleY(-1);
+
+}
+
+/* Paragraph text on top */
+.stack-text {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Bottom section */
+/* ===== Bottom Section (isolated) ===== */
+.bottom-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* helpful spacing above/below; adjust as you integrate */
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Background image (bottom of the stack) */
+.bottom-section .bottom-bg {
+  position: absolute;
+  inset: 0;
+  background: url('/images-home/last-bg.jpg') center / cover no-repeat;
+  z-index: 0;
+}
+
+/* Constraining wrapper for the content + overlay */
+.bottom-section .bottom-wrap {
+  position: relative;
+  z-index: 1; /* above background */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Green rectangle + curve (middle layer over the bg) */
+.bottom-section .green-layer {
+  position: relative;
+  width: min(1444px, 95vw);                  /* content width like your comps */
+  background-color: rgba(108, 193, 100, 0.69); /* #6CC164B0 rectangle */
+  border-radius: 0;                          /* flat top as in your template */
+  padding: 40px 24px 56px;                   /* space for paragraph & images */
+  box-sizing: border-box;
+}
+
+/* Upside-down green curve that extends at the bottom edge */
+.bottom-section .green-layer__curve {
+  position: absolute;
+  left: 0;
+  bottom: -1px;             /* tuck the seam to avoid tiny gaps */
+  width: 100%;
+  height: 311px;            /* matches your curve height spec */
+  transform: scaleY(-1);    /* flip the curve upside down */
+  pointer-events: none;
+  fill: rgba(108, 193, 100, 0.69); /* same green as rectangle */
+}
+
+/* ---------- Top paragraph on the green layer ---------- */
+.bottom-section .bottom-text {
+  max-width: 1349px;        /* your width spec */
+  margin: 0 auto 28px auto; /* centered, with spacing below */
+  text-align: center;
+  font-weight: 400;
+  font-size: 40px;          /* your type spec */
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+
+/* ---------- Two small images (parallel) ---------- */
+.bottom-section .plumbing-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+  justify-content: space-between;
+  margin: 8px 0 30px 0; /* space before the large image */
+}
+
+.bottom-section .card {
+  background: #FFFFFF;                 /* white card behind small/big images */
+  border-radius: 16px;
+  box-shadow: 0px 7px 14px rgba(0,0,0,0.18);
+  padding: 14px;                       /* white frame look like your mock */
+}
+
+.bottom-section .plumbing-images .card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Size targets close to your numbers (640×480 & 683×484) */
+.bottom-section .plumbing-images .card:nth-child(1) { max-width: 640px; }
+.bottom-section .plumbing-images .card:nth-child(2) { max-width: 683px; }
+
+/* ---------- Large image below the two ---------- */
+.bottom-section .large-image {
+  margin: 0 auto;
+  max-width: 1369px;        /* your big image width spec */
+}
+
+.bottom-section .large-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Make sure the curve extends behind the big image as in your design */
+.bottom-section .large-image { position: relative; z-index: 2; }
+.bottom-section .plumbing-images,
+.bottom-section .bottom-text { position: relative; z-index: 2; }
+
+/* Responsive tweaks (keeps order: text -> two images -> big image) */
+@media (max-width: 1200px) {
+  .bottom-section .plumbing-images {
+    grid-template-columns: 1fr;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .bottom-section .plumbing-images .card { max-width: none; }
+}
+
+
+
+
+
+/* Footer */
+.custom-footer {
+    background-color: #6CC164;
+    border-top-left-radius: 40% 10%;
+    border-top-right-radius: 40% 10%;
+}
+
+.footer-title {
+    border-bottom: 3px solid white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.footer-p {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.footer-text-h {
+    color: #E6BE61;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.footer-text-m {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
